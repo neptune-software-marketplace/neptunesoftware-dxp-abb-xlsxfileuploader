@@ -1,0 +1,4 @@
+selectedFile = event.target.files[0];
+// document.getElementById("uploadXLS").addEventListener("change", function(event){
+//     selectedFile = event.target.files[0];
+// });

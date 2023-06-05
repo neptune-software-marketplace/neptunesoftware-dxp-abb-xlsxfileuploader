@@ -1,0 +1,388 @@
+{
+	"id": "09e6374a-b8fb-ed11-907c-000d3a654fb6",
+	"createdAt": "2023-05-26T11:27:26.613Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "248cf96a-5fa1-486c-db83-b26c4789a03c",
+			"path": "/xlsx_files_table",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1,fieldName2,fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "xlsx_files_table"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "c4dcad47-d074-45ba-9667-bb05fb3a31ce",
+			"path": "/xlsx_files_table",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "xlsx_files_table"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "xlsx_files_table"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "7ba12825-cc2c-41a8-f4da-36760896adde",
+			"path": "/xlsx_files_table",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "xlsx_files_table"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "xlsx_files_table"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "4b60bac7-7432-4d80-8d44-760fb3917aed",
+			"path": "/xlsx_files_table",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "xlsx_files_table"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "f26ea4ea-6076-458e-8d0c-fc0d97d04c93",
+			"path": "/xlsx_files_table/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "8acfb9d2-1e69-4dd5-f40b-cc8dbc6f4cc8",
+			"name": "xlsx_files_table",
+			"properties": [
+				{
+					"id": "2dd2ab81-a9fe-4e6b-d82c-5a69402af165",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "d2841fec-2dea-4a6d-ef2b-b11edbdc9e8f",
+					"parent": "",
+					"name": "file_columns",
+					"description": "Store the file document columns in a JSON Array",
+					"objectType": "object"
+				},
+				{
+					"id": "fc9a5105-cc0a-4682-c839-685a9ba73153",
+					"parent": "",
+					"name": "file_datacolumn1",
+					"description": "Store file data column 1",
+					"objectType": "string"
+				},
+				{
+					"id": "0036aede-036e-4630-ed51-2d4c2e6292b8",
+					"parent": "",
+					"name": "file_datacolumn2",
+					"description": "Store file data column 2",
+					"objectType": "string"
+				},
+				{
+					"id": "5dd650d5-058b-4cce-f217-9d1bddd05a54",
+					"parent": "",
+					"name": "file_datacolumn3",
+					"description": "Store file data column 3",
+					"objectType": "string"
+				},
+				{
+					"id": "3e0e1d3a-532d-4e94-af1c-946dc3721591",
+					"parent": "",
+					"name": "file_datacolumn4",
+					"description": "Store file data column 4",
+					"objectType": "string"
+				},
+				{
+					"id": "1b6c8065-7fb6-49c5-da67-7e1ddf6052d4",
+					"parent": "",
+					"name": "file_datacolumn5",
+					"description": "Store file data column 5",
+					"objectType": "string"
+				},
+				{
+					"id": "710f4b50-39ad-4347-b385-1c2fb75378d3",
+					"parent": "",
+					"name": "file_datacolumn6",
+					"description": "Store file data column 6",
+					"objectType": "string"
+				},
+				{
+					"id": "57ac6850-4b0d-404f-d914-ca89e1c43a93",
+					"parent": "",
+					"name": "file_datacolumn7",
+					"description": "Store file data column 7",
+					"objectType": "string"
+				},
+				{
+					"id": "57d7ff87-e092-4c9b-abda-bc2aa8fa1289",
+					"parent": "",
+					"name": "file_datacolumn8",
+					"description": "Store file data column 8",
+					"objectType": "string"
+				},
+				{
+					"id": "1fc3d0bb-e90f-4c46-a6d8-7abdc4ad6581",
+					"parent": "",
+					"name": "file_type",
+					"description": "Store file type",
+					"objectType": "string"
+				},
+				{
+					"id": "f6bd5000-b769-4033-881d-6cf4154675c7",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "788e50ba-686c-4cee-d512-4f9c493b42b5",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created By",
+					"objectType": "string"
+				},
+				{
+					"id": "18edee50-377c-4fd6-da99-a135283214f2",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "83d13805-28ed-43d6-ccf8-ab04558dd585",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated By",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "f06abb8b-4778-4d0c-cc8a-6c7b2719bb7f",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "4664b1c3-fb1d-40d3-8327-75133ddf3bad",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "4c178aa6-4164-4248-e293-df3cbc2b07bc",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "162ddc01-113b-419a-cecc-5580e7ab9fbf",
+			"name": "count",
+			"properties": [
+				{
+					"id": "46694394-6494-49ea-89e0-666bce2aebe8",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "API xlsx_files_table",
+	"endpoint": "/api/entity",
+	"ver": "23.6.5.858",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "651d53ea-7e03-ee11-907c-000d3a654fb6",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

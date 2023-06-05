@@ -1,0 +1,62 @@
+{
+	"id": "651d53ea-7e03-ee11-907c-000d3a654fb6",
+	"createdAt": "2023-06-05T08:56:53.720Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-xlsxfileuploader"
+	},
+	"name": "neptunesoftware-dxp-abb-xlsxfileuploader",
+	"description": "Package with all of the components that are used with the XLSX file uploader app",
+	"ver": "23.6.5.1533",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "14506e25-b8fb-ed11-907c-000d3a654fb6",
+			"application": "xlsxsimpleuploadapp",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "09e6374a-b8fb-ed11-907c-000d3a654fb6",
+			"name": "API xlsx_files_table",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "d5debb39-b8fb-ed11-907c-000d3a654fb6",
+			"name": "xlsx_files_table",
+			"description": null
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"media_library": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}

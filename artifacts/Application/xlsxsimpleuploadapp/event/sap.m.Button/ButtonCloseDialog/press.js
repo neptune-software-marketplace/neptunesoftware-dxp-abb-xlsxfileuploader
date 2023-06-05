@@ -1,0 +1,3 @@
+DialogMessage.close();
+
+ClearEverything();

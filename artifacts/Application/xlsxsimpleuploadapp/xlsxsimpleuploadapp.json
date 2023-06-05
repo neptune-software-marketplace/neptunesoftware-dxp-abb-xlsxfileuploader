@@ -1,0 +1,676 @@
+{
+	"id": "14506e25-b8fb-ed11-907c-000d3a654fb6",
+	"createdAt": "2023-05-26T11:27:59.826Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "e314bb43-0f66-4d50-f66b-8a8ab50bd7bb",
+			"fieldName": "Shell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "dab99171-4525-401c-effb-fd859c0d1098",
+					"fieldName": "oApp",
+					"fieldParent": "e314bb43-0f66-4d50-f66b-8a8ab50bd7bb",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "cd5344d8-a704-4f56-faa9-01d50b89ca93",
+							"fieldName": "Page",
+							"fieldParent": "dab99171-4525-401c-effb-fd859c0d1098",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "XLSX File Upload App",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "titleAlignment",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "b7527162-f533-42b7-8db9-912ebd126501",
+									"fieldName": "SimpleForm",
+									"fieldParent": "cd5344d8-a704-4f56-faa9-01d50b89ca93",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "b61a9910-d688-4326-d1f3-7b756c680959",
+											"fieldName": "LabelUploadXLS",
+											"fieldParent": "b7527162-f533-42b7-8db9-912ebd126501",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Upload a XLS File",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "required",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "c59d2ca3-dff8-4087-9fa6-9dcc84c176c5",
+											"fieldName": "uploadXLS",
+											"fieldParent": "b7527162-f533-42b7-8db9-912ebd126501",
+											"fieldType": "sap.ui.unified.FileUploader",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "sendXHR",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-solid/file-upload",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "fileType",
+													"grouping": "Properties",
+													"value": "[\"XLSX\",\"xlsx\"]",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "uploadAborted",
+													"grouping": "Events",
+													"value": "oApp.setBusy(false);",
+													"script": "oApp.setBusy(false);",
+													"translation": []
+												},
+												{
+													"attribute": "change",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.ui.unified.FileUploader/uploadXLS/change.script",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "46e7aaba-e01d-430e-a961-fbcc07a86ffa",
+											"fieldName": "ButtonSubmitFile",
+											"fieldParent": "b7527162-f533-42b7-8db9-912ebd126501",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Accept",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Upload",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-solid/upload",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/ButtonSubmitFile/press.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "e2a58d5c-e100-41aa-e69b-15235870ede4",
+									"fieldName": "TableXLSXData",
+									"fieldParent": "cd5344d8-a704-4f56-faa9-01d50b89ca93",
+									"fieldType": "sap.m.Table",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "Generic Array",
+									"bindingType": "h",
+									"bindingSource": "P9",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "f27a7a4a-fae6-454a-b2b2-7bb677955c1c",
+											"fieldName": "colItemTableXLSX",
+											"fieldParent": "e2a58d5c-e100-41aa-e69b-15235870ede4",
+											"fieldType": "sap.m.ColumnListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "2fbd48db-2452-49a5-da6f-bdc1ad532a72",
+									"fieldName": "oBarFooter",
+									"fieldParent": "cd5344d8-a704-4f56-faa9-01d50b89ca93",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setFooter",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "92d8d5e8-c907-4f38-c2bb-47410e69673d",
+											"fieldName": "Left",
+											"fieldParent": "2fbd48db-2452-49a5-da6f-bdc1ad532a72",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentLeft",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "062c1f88-b095-4ddd-c922-6840d48255ab",
+													"fieldName": "ButtonClearEverything",
+													"fieldParent": "92d8d5e8-c907-4f38-c2bb-47410e69673d",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Emphasized",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Clear Everything",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://refresh",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "ClearEverything();",
+															"script": "ClearEverything();",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "1e85a9b3-59ff-4ed8-8697-394c977e0845",
+											"fieldName": "Right",
+											"fieldParent": "2fbd48db-2452-49a5-da6f-bdc1ad532a72",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "d85462b2-ab41-4bfa-c519-4f303add73ee",
+													"fieldName": "ButtonSave",
+													"fieldParent": "1e85a9b3-59ff-4ed8-8697-394c977e0845",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Accept",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Save",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://save",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "saveXLSXData(excelHeader, modelTableXLSXData.oData);",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "b0f35661-b21f-4190-f0dc-e34b033ecf23",
+					"fieldName": "Scripts",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "ae5267fa-0947-400f-a3a9-12c62012d29d",
+							"fieldName": "GlobalVariables",
+							"fieldParent": "b0f35661-b21f-4190-f0dc-e34b033ecf23",
+							"fieldType": "neptune.Script",
+							"script": "var selectedFile, excelData = [], excelHeader;",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "bccf88d2-c0f4-4bd6-dee3-bee584df5988",
+							"fieldName": "Functions",
+							"fieldParent": "b0f35661-b21f-4190-f0dc-e34b033ecf23",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Scripts/Functions.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "ec2ae566-266c-442b-c3db-eb2fc33afa25",
+					"fieldName": "Dialogs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "03e34985-2c75-4c80-e8a1-bc1024d5f17d",
+							"fieldName": "ButtonCloseDialog",
+							"fieldParent": "ec2ae566-266c-442b-c3db-eb2fc33afa25",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Reject",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Close",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "icon",
+									"grouping": "Properties",
+									"value": "sap-icon://cancel",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.Button/ButtonCloseDialog/press.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "3f01fc06-9bc0-4bba-8922-def59a803946",
+							"fieldName": "DialogMessage",
+							"fieldParent": "ec2ae566-266c-442b-c3db-eb2fc33afa25",
+							"fieldType": "sap.m.Dialog",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Message",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "System Message",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "state",
+									"grouping": "Properties",
+									"value": "Success",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "icon",
+									"grouping": "Properties",
+									"value": "sap-icon://information",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "endButton",
+									"grouping": "Associations",
+									"value": "ButtonCloseDialog",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "58b3beac-12ff-4655-afc3-8ed28fea1c8a",
+									"fieldName": "SimpleForm1",
+									"fieldParent": "3f01fc06-9bc0-4bba-8922-def59a803946",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "e15693f9-25a1-486d-ba1a-c297c4ca57c6",
+											"fieldName": "TextSystemMessage",
+											"fieldParent": "58b3beac-12ff-4655-afc3-8ed28fea1c8a",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "The uploaded CSV data was saved successfully!",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "cf761148-7baa-46bd-c031-70fd4f2364b0",
+					"fieldName": "Models",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "5d28420f-e449-42af-e285-4c5bf50730cd",
+							"fieldName": "MultiModel",
+							"fieldParent": "cf761148-7baa-46bd-c031-70fd4f2364b0",
+							"fieldType": "neptune.model",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Generic Array",
+							"bindingType": "h",
+							"bindingSource": "P9",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "ea51620b-fdec-4360-a302-57aab0368542",
+					"fieldName": "APIs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "c4555d3f-fd62-43e8-d284-b0f5180bc4e6",
+							"fieldName": "RestAPISaveFileData",
+							"fieldParent": "ea51620b-fdec-4360-a302-57aab0368542",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "09e6374a-b8fb-ed11-907c-000d3a654fb6",
+							"restOperation": "7ba12825-cc2c-41a8-f4da-36760896adde",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "ajaxSuccess",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.restapi/RestAPISaveFileData/ajaxSuccess.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "23.6.5.957",
+	"application": "xlsxsimpleuploadapp",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "file:///header.html",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"apis": [
+		{
+			"id": "09e6374a-b8fb-ed11-907c-000d3a654fb6",
+			"name": "API xlsx_files_table",
+			"ver": "23.6.5.858"
+		}
+	],
+	"package": "651d53ea-7e03-ee11-907c-000d3a654fb6"
+}

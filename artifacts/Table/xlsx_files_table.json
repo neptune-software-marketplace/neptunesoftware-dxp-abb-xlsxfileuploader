@@ -1,0 +1,97 @@
+{
+	"id": "d5debb39-b8fb-ed11-907c-000d3a654fb6",
+	"createdAt": "2023-05-26T11:27:01.113Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"fields": [
+		{
+			"id": "a565c829-5b89-4b47-e27e-21e102750b8e",
+			"fieldName": "file_columns",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Store the file document columns in a JSON Array"
+		},
+		{
+			"id": "b6758b5f-da67-4aed-964d-fabc234d183c",
+			"fieldName": "file_datacolumn1",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Store file data column 1"
+		},
+		{
+			"id": "ce449e06-448a-4aa6-935a-db76d2d4d14d",
+			"fieldName": "file_datacolumn2",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Store file data column 2"
+		},
+		{
+			"id": "f6d07849-6146-4613-a6b5-e7a9ef5c259a",
+			"fieldName": "file_datacolumn3",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Store file data column 3"
+		},
+		{
+			"id": "54dc298b-8893-4fab-9028-a90f0f717732",
+			"fieldName": "file_datacolumn4",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Store file data column 4"
+		},
+		{
+			"id": "2928cfa0-a2f1-4c2a-cd5e-aebf1a4becc2",
+			"fieldName": "file_datacolumn5",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Store file data column 5"
+		},
+		{
+			"id": "aa6da0a4-86bb-4248-ce65-1df5926394b8",
+			"fieldName": "file_datacolumn6",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Store file data column 6"
+		},
+		{
+			"id": "56526d3b-44c3-4f0b-ba3c-1f07e3d65dbe",
+			"fieldName": "file_datacolumn7",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Store file data column 7"
+		},
+		{
+			"id": "20f124ae-42d5-46b5-865a-4d7bd39c3e97",
+			"fieldName": "file_datacolumn8",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Store file data column 8"
+		},
+		{
+			"id": "f23c9f2e-82c5-46ee-d28c-89fa508c9732",
+			"fieldName": "file_type",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Store file type",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "xlsx_files_table",
+	"description": null,
+	"ver": "23.6.5.958",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "651d53ea-7e03-ee11-907c-000d3a654fb6",
+	"rolesRead": [],
+	"rolesWrite": []
+}
